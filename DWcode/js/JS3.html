@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>第三章 程序控制结构和语句</title>
+</head>
+
+<body>
+<!--
+3.3条件判断语句
+3.3.1  if语句
+<p>如果时间早于20：00，会获得问候"Good day"。</p>
+<button onClick = "myFunction()">点击这里</button>
+<p id="demo"></p>
+<script type = "text/javascript">
+	function myFunction()
+	{
+		var x = "";
+		var time = new Date().getHours();
+		if (time<20)
+			{
+				x = "Good day";
+			}
+		document.getElementById("demo").innerHTML = x;
+	}
+	</script>
+--> 
+
+
+<!--
+3.3.2  if-else语句
+<script type="text/javascript">
+	var a="john";
+	if(a!="john")
+		{
+			document.write(
+			"<h1 style='text-align:center;color:red;'>欢迎JOHN光临</h1>");
+		}
+	else
+		{
+			document.write("<p style='font-size:15px;font-weight:border;color:blue'>请重新输入名称</p>");
+		}
+	</script>
+-->
+
+
+<!--
+3.3.3   if-else-if 语句
+<p>if-else-if语句的使用</p>
+<script type="text/javascript">
+	var d= new Date()
+	var time=d.getHours()
+	if (time<10)
+		{
+			document.write("<b>Good morning</b>")
+		}
+	else if(time>=10&&time<16)
+		{
+			document.write("<b>Good day</b>")
+		}
+	else
+		{
+			document.write("<b>Hello World!</b>")
+		}
+	</script>
+-->
+
+<!--
+3.4.2  do-while语句
+<script type="text/javascript">
+	var i=0;
+	var iSum=0;
+	do{
+		iSum+=i;
+		i++;
+	}while(i<=100)
+	document.write("1-100的所有数之和为"+iSum);
+	</script>
+-->
+
+
+<!--
+3.4.3  for循环
+<script type="text/javascript">
+	for(var i=0;i<5;i++)
+		{
+			document.write("<p style='font-size:"+i+"0px'>欢迎学习</p>")
+		}
+	</script>
+-->
+
+
+<!--
+3.5.1  break语句
+<script type="text/javascript">
+	var sUrl="I have a dream";
+	var iLength=sUrl.length;
+	var iPos=0;
+	for(var i=0;i<iLength;i++)
+		{
+			if(sUrl.charAt(i)=="d")
+				{
+					iPos = i+1;
+					break;
+				}
+		}
+	document.write("字符串"+sUrl+"中的第一个d字母的位置为"+iPos);
+	</script>
+-->
+
+
+<!--
+3.5.2  continue语句
+<script type="text/javascript">
+	var sUrl="i have a dream";//此处为i而不是I，因为ASCII码中大写字母在小写字母前A为65，a是97，0是48
+	var iLength=sUrl.length;
+	var iCount=0;
+	for(var i=0;i<iLength;i++)
+		{
+			if(sUrl.charAt(i)>="d")
+				{
+					continue;
+				}
+			document.write(sUrl.charAt(i));
+		}
+	</script>
+-->
+
+
+3.6.0  使用对话框
+<p>对话框有三种</p>
+<p>1：只是提醒，不能对脚本产生任何改变；</p>
+<p>2：一般用于确认，返回true或者false</p>
+<p>3：一个带输入的对话框，可以返回用户填入的字符串</p>
+<p>下面我们分别演示：</p>
+<p>演示一：提醒对话框</p>
+<p><input type="submit" name="Sumbit1" value="提交" onlick="ale()"/></p>
+<p>演示二：确认对话框</p>
+<p><input type="submit" name="Sumbit2" value="提交" onlick="ale()"/></p>
+<p>演示三：要求用户输入，然后给个结果</p>
+<p><input type="submit" name="Sumbit3" value="提交" onlick="ale()"/></p>
+
+<script language="javascript">
+	function ale()
+	{
+		alert("呵呵，演示一完毕");
+	}
+	function firm()
+	{
+		
+	}
+	</script>
+</body>
+</html>

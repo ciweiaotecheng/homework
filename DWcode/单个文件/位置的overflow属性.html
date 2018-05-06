@@ -1,0 +1,123 @@
+<!doctype html>
+/*在验证overflow属性时，发现每个span设置相同的间距时实际距离仍然不同*/
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+	span{
+		position: absolute;
+		width: 200px;
+		height: 150px;
+		border: 1px solid #813CB5;
+	}
+	</style>
+</head>
+
+<body>
+<table border="1" align="center">
+	<tr>
+		<td>
+			<span style="left: 10px;top:10px;overflow: visible;">
+			  eeettt落日熔金，暮云合璧，<br>
+			  人在何处？<br>
+			  染柳烟浓，吹梅笛怨，<br>
+			 ferfrggtgwfwwferf 春意知几许？<br>
+			  元宵佳节，融合天气，<br>
+			  次第岂无风雨？<br>
+			  来相召，香车宝马，<br>
+			  谢他酒朋诗侣。<br>
+			  fdvefrefwfefrffef中州盛日，闺门多暇，<br>
+			  jdjsdkjejdkwfewkf<br>
+			  jrefwefef3w443gdjsdkjejdkwfewkf<br>
+			  jdjsdkjejdkwfewkf<br>
+			  jdjrfergtrdthyjujsdkjejdkwfewkf<br>
+			  jdjsdkjejdkwfewkf<br>
+			  defuygfugreug<br>
+			  jdjsdkjejdkwfewkf<br>
+			  defuygfugreug<br>
+			  jdjsdkjejdkwfewkf<br>
+			  defuygtthyhjyjujkyyteyy5fugreug<br>
+			  jdjsdkjejdkwfewkf<br>
+			  dfergtrg<br>
+			</span>
+		</td>/*visible：不管组件长短，内容完全显示*/
+		<td>
+			<span style="left: 220px;top:10px;overflow: hidden;">
+			  落日熔金，暮云合璧，<br>
+			  人在何处？<br>
+			  染柳烟浓，吹梅笛怨，<br>
+			  春意知几许？<br>
+			  元宵佳节，融合天气，<br>
+			  次第岂无风雨？<br>
+			  来相召，香车宝马，<br>
+			  谢他酒朋诗侣。<br>
+			  中州盛日，闺门多暇，<br>
+			  jdjsdkjejdkwfewkf<br>
+			  jdjsdkjejdkwfewkf<br>
+			  jdjsdkjejdkwfewkf<br>
+			  jdjsdkjejdkwfewkf<br>
+			  jdjsdkjejdkwfewkf<br>
+			  defuygfugreuthhyjuytrtgfhyhtththtythgbgnjjjhtrrrffffferttg<br>
+			  jdjsdkjejdkwfewkf<br>
+			  defuygfugreug<br>
+			  jdjsdkjejdkwfewkf<br>
+			  defuygfugreug<br>
+			  jdjsdkjejdkwfewkf<br>
+			  dfergtrg<br>
+			</span>
+		</td>/*hidden:超出长宽的内容不显示*/
+		<td>
+			<span style="left:440px;top:10px;overflow:scroll;">
+			  落日熔金，暮云合璧，<br>
+			  人在何处？<br>
+			  染柳thhhytyytyjyttyyt烟浓，吹梅笛怨trhjyukiufdsserg，<br>
+			  春意知几许？<br>
+			  元宵佳节，融合天气，<br>
+			  次第岂无风雨？<br>
+			  来相召，香车宝马，<br>
+			  谢他酒朋诗侣。<br>
+			  中州盛日，闺门多暇，<br>
+			  jdjsdkjejdkwfewkf<br>
+			  jdjsdkjejdkwfewkf<br>
+			  jdjsdkjejdkwfewkf<br>
+			  jdjsdkjejdkwfewkf<br>
+			  jdjsdkjejdkwfewkf<br>
+			  defuygfugreug<br>
+			  jdjsdkjejdkwfewkf<br>
+			  defuygfugreug<br>
+			  jdjsdkjejdkwfewkf<br>
+			  defuygfugreug<br>
+			  jdjsdkjejdkwfewkf<br>
+			  dfergtrg<br>
+			</span>
+		</td>/*scroll：无论内容会不会超出长宽，都加入滚动条*/
+		<td>
+			<span style="left: 660px;top:10px;overflow: auto;">
+			  落日熔金，暮云合璧，<br>
+			  人在何处？<br>
+			  染柳烟浓，吹梅笛怨，<br>
+			  春意知几许？<br>
+			  元宵佳节，融合天气，<br>
+			  次第岂无风雨？<br>
+			  来相召，香车宝马，<br>
+			  谢他酒朋诗侣。<br>
+			  中州盛日，闺门多暇，<br>
+			  jdjsdkjejdkwfewkf<br>
+			  jdjsdkjejdkwfewkf<br>
+			  jdjsdkjejdkwfewkf<br>
+			  jdjsdkjejdkwfewkf<br>
+			  jdjsdkjejdkwfewkf<br>
+			  defuygfugreug<br>
+			  jdjsdkjejdkwfewkf<br>
+			  defuygfugreug<br>
+			  jdytji7yygugdhnhfiuhgrijnvnjfiklslojojgijsdkjejdkwfewkf<br>
+			  defuygfugreug<br>
+			  jdjsdkjejdkwfewkf<br>
+			  dfergtrg<br>
+			</span>
+		</td>/*auto：根据情况决定是否加入滚动条*/
+	</tr>
+</table>
+</body>
+</html>

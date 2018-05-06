@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<h3>教学意见调查表</h3>
+<form method="post" action="" enctype="text/plain">
+	<fieldset>
+	    <legend>个人及课程资料</legend>
+	    <ol>
+		    <li>
+			科目名称：<input type="text" name="subject" autofocus/>
+		</li>
+		    <li>
+			请选择院系：<select size="1" name="department" multiple>
+			             <option>英语系</option>
+			             <option>电子信息</option>
+			             <option>材料</option>
+			             <option>管理</option>  
+			          </select>
+		</li>
+		    <li>
+			讲师：<input type="text" name="teacher"/>
+		</li>
+		    <li>
+			性别：<input type="radio" name="gender" value="男"checked/>男生
+			     <input type="radio" name="gender" value="女"/>女生
+		</li>
+		    <li>
+			开课日期：<input type="date" name="startdate"/>
+		</li>
+	    </ol>
+    </fieldset>
+    <fieldset>
+    	<legend>意见调查</legend>
+    	<ol>
+    		<li>
+    			这门课你的出席状况:
+    			<input type="radio" name="assist" value="没有缺课"/>没有缺课&nbsp;
+    			<input type="radio" name="assist" value="缺课1-3次"/>缺课1-3次&nbsp;
+    			<input type="radio" name="assist" value="缺课4-6次"/>缺课4-6次&nbsp;
+   		  </li>
+    		<li>
+    			修这门课的原因（可复选）：
+    			<input type="checkbox" name="reason" value="必修"/>必修
+    			<input type="checkbox" name="reason" value="凑学分"/>凑学分
+    			<input type="checkbox" name="reason" value="个人兴趣"/>个人兴趣
+    		</li>
+    		<li>
+    			建议：<br>
+    			<textarea rows="3" name="hope" cols="50"></textarea>
+    		</li>
+    	</ol>
+    </fieldset>
+    <input type="submit" value="提交"/>
+    <input type="reset" value="重写"/>
+    
+      <input type="number" name="setnumber" value="5" min="3" max="20"/>
+    <br>
+    <input type="color" name="selectcolor" value="#ff00ff"/>
+    <br>
+    <input type="range" name="selectrange" value="5" min="3" max="20"/>
+    <br>
+    <input type="search" name="searchword"/>
+</form>
+</body>
+</html>
