@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4.2调用函数</title>
+<script type="text/javascript">
+	//函数isLeapYear判断给定的年份是否为闰年，
+	//如果是，则返回指定年份为闰年的字符串，否则，返回平年字符串
+	function isLeapYear(year){
+		if(year%4==0&&year%100!=0||year%400==0)
+			{
+				return year + "年是闰年";
+			}
+		else
+		   {
+			    return year+"年是平年";
+		    }
+	}
+	document.write(isLeapYear(2018));
+	</script>
+</head>
+
+<body>
+</body>
+</html>
